@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      height: 100vh;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .btn {
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      color: white;
-      background-color: #ff5e57;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #e14e4a;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <link rel="stylesheet" href="new portfolio/loading/styles.css">
 </head>
 <body>
 
-  <a href="new portfolio/Loading.html" class="btn">View My Portfolio</a>
+<div class="container">
+    <div class="percent" id="percent">0%</div>
+    <div class="bar">
+        <div class="progress" id="progress-bar"></div>
+        <div class="text" id="status-text">Loading...</div>
+    </div>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>

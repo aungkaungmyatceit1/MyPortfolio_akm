@@ -10,7 +10,7 @@ let loading = setInterval(() => {
         statusText.textContent = "Completed!";
         statusText.style.opacity = 1;  // Make it visible
         percentElement.style.transform = "scale(1)";
-        window.location.href="index.html"; 
+        window.location.href="new portfolio/index.html"; 
     } else {
         percent++;
         percentElement.textContent = percent + "%";
