@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  background-color: hsl(229, 57%, 11%);
+}
+
+section {
+  color: white;
+  min-height: 100vh;
+  background: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 50%;
+  gap: 1rem;
+}
+section .first-box {
+  width: 250px;
+  height: 120px;
+  border-radius: 10px;
+  border-top-right-radius: 80px;
+  background-color: hsl(228, 56%, 26%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+section .first-box img {
+  width: 80px;
+  height: auto;
+}
+section .first-box .sub-logo-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+section .first-box .sub-logo-container img {
+  width: 20px;
+  height: auto;
+}
+section .second-box {
+  width: 500px;
+  height: 120px;
+  background-color: hsl(228, 56%, 26%);
+  padding: 15px;
+  font-size: 12px;
+  border-radius: 15px;
+}
+section .second-box .running-bar {
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: hsl(229, 57%, 11%);
+}
+section .second-box .running-bar .sub-run-bar {
+  width: 60%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: hsl(243, 100%, 93%);
+}
+section .show-section {
+  width: 160px;
+  height: auto;
+  background-color: white;
+}
+section .show-section .m-box .text {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

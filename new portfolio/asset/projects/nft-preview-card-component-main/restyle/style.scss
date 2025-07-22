@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+$Blue-500: hsl(215, 51%, 70%);
+$Cyan-400: hsl(178, 100%, 50%);
+$Blue-950: hsl(217, 54%, 11%);
+$Blue-800: hsl(215, 32%, 27%);
+$Blue-900: hsl(216, 50%, 16%);
+$White: hsl(0, 0%, 100%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  section {
+    background-color: $Blue-950;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+      .card {
+        max-width: 300px;
+        height: fit-content;
+        background-color: $Blue-900;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 5px solid black 1.5;
+        .image-container {
+          img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+          }
+          &:hover {
+            
+          }
+        }
+        .content-container {
+          h3 {
+            color: white;
+            margin-bottom: 5px;
+          }
+          p {
+            font-size: small;
+            margin: 5px;
+            color: $Blue-500;
+          }
+        }
+        .eth-time-container {
+          display: flex;
+          justify-content: space-between;
+          .eth,
+          .time {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.7rem;
+            img {
+              width: 9px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          .eth {
+            color: $Cyan-400;
+          }
+          .time {
+            p {
+              color: $Blue-500;
+            }
+          }
+        }
+        hr {
+          margin: 1rem 0 0.8rem;
+          border-color: hsl(215, 62%, 79%);
+          border-bottom: none;
+        }
+        .footer {
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            outline: 1.2px solid $White;
+          }
+          p {
+            color: $Blue-500;
+            span {
+              color: $White;
+            }
+          }
+        }
+      }
+    }
+  }
+}

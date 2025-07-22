@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="square-path">
+      <span>D</span><span>I</span><span>G</span><span>I</span><span>T</span
+      ><span>A</span><span>L</span> <span>C</span><span>L</span><span>O</span
+      ><span>C</span><span>K</span>
+    </div>
+    <div class="box-container">
+      <div class="semi-1">
+        <div class="mini-box-1">
+          <div id="date"></div>
+        </div>
+        <div class="mini-box-2"><div id="day"></div></div>
+      </div>
+      <div class="semi-2">
+        <div id="clock"></div>
+      </div>
+    </div>
+
+    <script>
+      // Set interval correctly
+      let myTime = setInterval(myClock, 1000);
+
+      function myClock() {
+        const CurrentTime = new Date();
+
+        // Get day string
+        let dayNum = CurrentTime.getDay();
+        let dayStr = "";
+        switch (dayNum) {
+          case 0:
+            dayStr = "Sunday";
+            break;
+          case 1:
+            dayStr = "Monday";
+            break;
+          case 2:
+            dayStr = "Tuesday";
+            break;
+          case 3:
+            dayStr = "Wednesday";
+            break;
+          case 4:
+            dayStr = "Thursday";
+            break;
+          case 5:
+            dayStr = "Friday";
+            break;
+          case 6:
+            dayStr = "Saturday";
+            break;
+        }
+
+        // Set contents
+        document.getElementById("clock").innerHTML =
+          CurrentTime.toLocaleTimeString();
+        document.getElementById("date").innerHTML =
+          CurrentTime.toLocaleDateString();
+        document.getElementById("day").innerHTML = dayStr;
+      }
+
+      myClock(); // Run once immediately
+    </script>
+  </body>
+</html>

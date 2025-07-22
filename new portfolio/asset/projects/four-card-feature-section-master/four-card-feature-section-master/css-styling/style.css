@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+section .container {
+  width: 100%;
+  padding: 3rem 1rem;
+}
+@media (min-width: 992px) {
+  section .container {
+    width: 850px;
+    padding: 0;
+  }
+}
+section .container .intro-container {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  section .container .intro-container {
+    max-width: 400px;
+  }
+}
+section .container .intro-container h2,
+section .container .intro-container h3 {
+  font-size: 1.5rem;
+}
+section .container .intro-container h3 {
+  font-weight: 200;
+}
+section .container .intro-container h2 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+section .container .intro-container p {
+  font-size: 13px;
+  margin: 0.8rem 0;
+}
+section .container .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+section .container .card-container .card {
+  flex-basis: 100%;
+  border-top: 3px solid transparent;
+  box-shadow: 0 4px 8px #a29e9e;
+  border-radius: 5px;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  section .container .card-container .card {
+    flex-basis: 30%;
+  }
+  section .container .card-container .card:nth-child(1), section .container .card-container .card:nth-child(4) {
+    transform: translateY(50%);
+  }
+}
+section .container .card-container .card:nth-child(1) {
+  border-top-color: hsl(180, 62%, 55%);
+}
+section .container .card-container .card:nth-child(2) {
+  border-top-color: hsl(0, 78%, 62%);
+}
+section .container .card-container .card:nth-child(3) {
+  order: 2;
+  border-top-color: hsl(34, 97%, 64%);
+}
+section .container .card-container .card:nth-child(4) {
+  order: 1;
+  border-top-color: hsl(212, 86%, 64%);
+}
+section .container .card-container .card .content h4 {
+  color: hsl(234, 12%, 34%);
+}
+section .container .card-container .card .content p {
+  font-size: 12px;
+  color: hsl(212, 6%, 44%);
+  margin: 0.5rem 0;
+}
+section .container .card-container .card .img-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.8rem 0;
+}
+section .container .card-container .card .img-container img {
+  width: 45px;
+}/*# sourceMappingURL=style.css.map */

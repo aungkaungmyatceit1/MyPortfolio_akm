@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+$Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+$Blue-200: hsl(243, 100%, 93%);
+$Grayish-Blue: hsl(229, 7%, 55%);
+$Blue-850: hsl(228, 56%, 26%);
+$Blue-950: hsl(229, 57%, 11%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body {
+  background-color: $Blue-950;
+}
+section {
+  color: white;
+  min-height: 100vh;
+  background: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 50%;
+
+  gap: 1rem;
+  .first-box {
+    width: 250px;
+    height: 120px;
+    border-radius: 10px;
+    border-top-right-radius: 80px;
+    background-color: $Blue-850;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    img {
+      width: 80px;
+      height: auto;
+    }
+
+    .sub-logo-container {
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+  .second-box {
+    width: 500px;
+    height: 120px;
+    background-color: $Blue-850;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 15px;
+
+    .running-bar {
+      width: 90%;
+      height: 10px;
+      border-radius: 5px;
+      background-color: $Blue-950;
+      .sub-run-bar {
+        width: 60%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: $Blue-200;
+      }
+    }
+    .storage-remainder {
+      p {
+      }
+    }
+  }
+  .show-section {
+    width: 160px;
+    height: auto;
+    background-color: white;
+    .m-box {
+      .text {
+        color: black;
+      }
+    }
+  }
+}

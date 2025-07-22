@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body section {
+  background-color: hsl(217, 54%, 11%);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body section .container .card {
+  max-width: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px solid black 1.5;
+}
+body section .container .card .image-container img {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section .container .card .content-container h3 {
+  color: white;
+  margin-bottom: 5px;
+}
+body section .container .card .content-container p {
+  font-size: small;
+  margin: 5px;
+  color: hsl(215, 51%, 70%);
+}
+body section .container .card .eth-time-container {
+  display: flex;
+  justify-content: space-between;
+}
+body section .container .card .eth-time-container .eth,
+body section .container .card .eth-time-container .time {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.7rem;
+}
+body section .container .card .eth-time-container .eth img,
+body section .container .card .eth-time-container .time img {
+  width: 9px;
+}
+body section .container .card .eth-time-container .eth p,
+body section .container .card .eth-time-container .time p {
+  font-size: 12px;
+}
+body section .container .card .eth-time-container .eth {
+  color: hsl(178, 100%, 50%);
+}
+body section .container .card .eth-time-container .time p {
+  color: hsl(215, 51%, 70%);
+}
+body section .container .card hr {
+  margin: 1rem 0 0.8rem;
+  border-color: hsl(215, 62%, 79%);
+  border-bottom: none;
+}
+body section .container .card .footer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+body section .container .card .footer img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  outline: 1.2px solid hsl(0, 0%, 100%);
+}
+body section .container .card .footer p {
+  color: hsl(215, 51%, 70%);
+}
+body section .container .card .footer p span {
+  color: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */

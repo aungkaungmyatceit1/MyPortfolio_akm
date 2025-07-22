@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$Lightred: hsl(0, 100%, 67%);
+$Orangeyyellow: hsl(39, 100%, 56%);
+$Greenteal: hsl(166, 100%, 37%);
+$Cobaltblue: hsl(234, 85%, 45%);
+
+$Lightslateblue: hsl(252, 100%, 67%);
+$Lightroyalblue: hsl(241, 81%, 54%);
+
+$Violetblue: hsla(256, 72%, 46%, 1);
+$Persianblue: hsla(241, 72%, 46%, 0);
+
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+
+body {
+  font-size: 18px;
+  background: $Pale-blue;
+}
+section {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $White;
+    border-radius: 25px;
+    margin: 20px;
+    width: 100vh;
+    max-width: 1000px;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      height: 70vh;
+      overflow: hidden;
+    }
+    .left-side {
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      border-radius: 25px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width:100%;
+      @media (min-width: 992px) {
+        width: 100%;
+        height: 100%;
+        padding: 2.6rem;
+        gap: 5rem;
+      }
+      h4 {
+        color: $Light-lavender;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+        box-shadow: 0px 0px white 4px;
+        h1 {
+          font-size: 4rem;
+          color: $White;
+          font-weight: 750;
+          text-shadow: 0px 0px grey 5px;
+        }
+        p {
+          color: $Dark-gray-blue;
+        }
+      }
+      h3 {
+        font-size: 3rem;
+        color: $White;
+      }
+      p {
+        color: $White;
+        text-align: center;
+        font-weight: 200;
+      }
+    }
+    .right-side {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .sub-heading {
+        h3 {
+          margin-bottom: 1rem;
+          justify-content: left;
+        }
+      }
+      .boxing {
+        margin: 10px 3rem;
+        width: 650px;
+        display: flex;
+        @media (min-width: 992px) {
+          width: 400px;
+        }
+        padding: 15px;
+        border-radius: 30px;
+        background-color: pink;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        gap: 3rem;
+        &:nth-child(1) {
+          background-color: rgba(255, 192, 203, 0.397);
+          .mini-left {
+            p {
+              color: hotpink;
+            }
+          }
+        }
+        &:nth-child(2) {
+          background-color: rgba(233, 176, 71, 0.541);
+          .mini-left {
+            p {
+              color: $Orangeyyellow;
+            }
+          }
+        }
+        &:nth-child(3) {
+          background-color: rgba(172, 255, 47, 0.705);
+          .mini-left {
+            p {
+              color: $Greenteal;
+            }
+          }
+        }
+        &:nth-child(4) {
+          background-color: rgba(8, 8, 218, 0.336);
+          .mini-left {
+            p {
+              color: $Cobaltblue;
+            }
+          }
+        }
+        .mini-left {
+          display: flex;
+          gap: 1rem;
+          img {
+            width: 30px;
+            height: auto;
+          }
+          p {
+            font-weight: bolder;
+          }
+        }
+        .mini-right {
+          p {
+          }
+        }
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        padding-left: 30px;
+        // display:flex;
+        // justify-content: center;
+        a {
+          button {
+            width: 90%;
+            padding: 20px 2rem;
+            background-color: $Violetblue;
+            color: white;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

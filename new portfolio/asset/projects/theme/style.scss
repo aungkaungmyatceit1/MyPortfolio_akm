@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+:root {
+  --theme-color: hotpink;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  flex-basis: 300px;
+  text-align: center;
+  //   background-color: pink;
+
+  box-shadow: 0 4px 5px #333;
+  border-radius: 10px;
+  overflow: hidden;
+  header {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--theme-color);
+    color: #fff;
+  }
+  .btn-container {
+    button {
+      background-color: var(--theme-color);
+      border: none;
+      margin: 1rem 0.5rem;
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      color: #fff;
+    }
+  }
+  .theme-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    .btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+
+      cursor: pointer;
+    }
+    .btn-1 {
+      background-color: #13099b;
+    }
+    .btn-2 {
+      background-color: #fc0713;
+    }
+    .btn-3 {
+      background-color: #034918;
+    }
+    .btn-4 {
+      background-color: #c08e03;
+    }
+  }
+}

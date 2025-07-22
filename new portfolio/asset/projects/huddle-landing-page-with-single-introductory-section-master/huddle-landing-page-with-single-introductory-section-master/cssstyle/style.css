@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/bg-mobile.svg");
+  background-color: hsl(257, 40%, 49%);
+  padding: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .hero-section {
+    background-image: url("../images/bg-desktop.svg");
+    padding: 1.5rem 3rem;
+  }
+}
+.hero-section header img {
+  width: 150px;
+}
+.hero-section .container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .hero-section .container {
+    flex-direction: row;
+  }
+}
+.hero-section .container .left-side {
+  flex-basis: 55%;
+}
+.hero-section .container .left-side img {
+  width: 100%;
+}
+.hero-section .container .right-side {
+  flex-basis: 45%;
+  color: #fff;
+}
+.hero-section .container .right-side .content {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .hero-section .container .right-side .content {
+    max-width: 70%;
+    text-align: left;
+  }
+}
+.hero-section .container .right-side .content h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.hero-section .container .right-side .content p {
+  margin: 1.2rem 0 1rem;
+  font-weight: 200;
+  line-height: 30px;
+}
+.hero-section .container .right-side .content button {
+  margin-top: 1rem;
+  padding: 0.5rem 3rem;
+  border-radius: 30px;
+  color: hsl(257, 40%, 49%);
+  border: 0;
+}
+.hero-section .container .right-side .content button:active {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+.hero-section footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+@media (min-width: 992px) {
+  .hero-section footer {
+    justify-content: flex-end;
+  }
+}
+.hero-section footer a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.hero-section footer a i {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=style.css.map */
